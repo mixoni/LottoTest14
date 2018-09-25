@@ -25,16 +25,22 @@ class LuckyNumber extends React.Component {
     }
     
     handleColor = ($value) => {
-        let color = "black";
+        let color = "red";
                 
         if($value >= 1 && $value < 10)
-            color = "yellow";
-        if($value >= 10 && $value < 20)
-            color = "red";
-        if($value >= 20 && $value < 30)
             color = "blue";
+        if($value >= 10 && $value < 20)
+            color = "purple";
+        if($value >= 20 && $value < 30)
+            color = "lightpurple";
         if($value >= 30 && $value < 40)
             color = "green";
+        if($value >= 40 && $value < 50)
+                color = "lightgreen";
+        if($value >= 50 && $value < 60)
+                color = "gold";
+        if($value >= 60 && $value < 70)
+                color = "yellow";
     
         return color;
     }

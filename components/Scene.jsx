@@ -8,10 +8,9 @@ var Statistics = require('./Statistics');
 var crossStorage = require('cross-storage');
 var moment = require('moment');
 
+
 var CrossStorageClient = crossStorage.CrossStorageClient;
 var CrossStorageHub = crossStorage.CrossStorageHub;
-
-
 
 class Scene extends React.Component {    
     constructor(props){
@@ -85,7 +84,7 @@ class Scene extends React.Component {
                          </div>});
             },
             (error) => {
-              //console.log(error);
+              console.log(error);
             }
           )       
     }
@@ -99,11 +98,11 @@ class Scene extends React.Component {
           .then(
             (result) => {
               let numbers = [...result.root.NextNumbers.split(',')];// result.root.NextNumbers.split(",");
-              //console.log('numbers: ' + numbers);
+              console.log('numbers: ' + numbers);
               this.setState({ component : <Animation data={result} numbers={numbers} onComplete = {this.RenderLastThreeResultsScene} /*onTimerExpired={this.RenderCountdownScene}*/ /> })              
             },
             (error) => {
-              //console.log(error);
+              console.log(error);
             }
           )
     }
@@ -114,16 +113,16 @@ class Scene extends React.Component {
         fetch("api/GetData")
           .then(res => res.json())
           .then((result) => {
-              //console.log('GetData returns: ' + result);
+              console.log('GetData returns: ' + result);
               let lastThree = result.root.PreviusGameNumbers.numbers;
               let seconds =  this.getRemainingTime(result.root.NextStart);
               let sceneTime = result.root.SceneTime.RenderLastThreeResultsScene;
-              //console.log('scene time: ' + sceneTime);
+              console.log('scene time: ' + sceneTime);
 
               this.setState({ component : <Results lastThree={lastThree} remainingTime={15} sceneTime={sceneTime} onComplete = {this.RenderStatisticsScene} onTimerExpired={this.RenderStatisticsScene} /> })              
             },
             (error) => {
-              //console.log(error);
+              console.log(error);
             }
           )        
    }
@@ -135,17 +134,17 @@ class Scene extends React.Component {
         fetch("api/GetData")
           .then(res => res.json())
           .then((result) => {
-              //console.log('GetData returns: ' + result);
+              console.log('GetData returns: ' + result);
               let lastThree = result.root.PreviusGameNumbers.numbers;
               let seconds =  this.getRemainingTime(result.root.NextStart);
               let sceneTime = result.root.SceneTime.RenderStatisticsScene;
-              //console.log('scene time: ' + sceneTime);
+              console.log('scene time: ' + sceneTime);
               this.setState({ component : 
-                    <Statistics  remainingTime={15} sceneTime={sceneTime}onComplete = {this.RenderCountdownScene}  onTimerExpired={this.RenderCountdownScene} />
+                    <Statistics  remainingTime={15} sceneTime={sceneTime} onComplete = {this.RenderCountdownScene}  onTimerExpired={this.RenderCountdownScene} />
               })             
             },
             (error) => {
-              //console.log(error);
+              console.log(error);
             }
         )          
    }
