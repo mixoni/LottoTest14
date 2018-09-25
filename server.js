@@ -44,8 +44,8 @@ app.get("/api/GetNumbers", function (req, res) {
 });
 
 app.get("/api/GetData", (req, res) => {
-    let data = GetDataFromFile(fileAnimationConfigs);
-    //let data = {"root":{"NextStart":"08/08/2018 00:04:25","GameId":"8855522255","CurrentScene":"RenderCountdownScene","NextNumbers":"1,2,33,14,5,36,27,8,19,30,21,12,39,40,15,6,17,38,9,24","PreviusGameNumbers":{"numbers":["5,21,38,25,11,6,16,29,24,35,9,22,33,1,14,36,3,15,35,8","14,37,31,11,10,22,28,19,17,26,30,10,4,31,4,11,15,15,20,24","6,24,9,16,6,29,17,4,29,6,22,30,15,2,38,32,33,25,14,5"]},"SceneTime":{"RenderLastThreeResultsScene":"15","RenderStatisticsScene":"10"}}}
+    //let data = GetDataFromFile(fileAnimationConfigs);
+    let data = {"root":{"NextStart":"08/08/2018 00:04:25","GameId":"8855522255","CurrentScene":"RenderCountdownScene","NextNumbers":"1,2,33,14,5,36,27,8,19,30,21,12,39,40,15,6,17,38,9,24","PreviusGameNumbers":{"numbers":["5,21,38,25,11,6,16,29,24,35,9,22,33,1,14,36,3,15,35,8","14,37,31,11,10,22,28,19,17,26,30,10,4,31,4,11,15,15,20,24","6,24,9,16,6,29,17,4,29,6,22,30,15,2,38,32,33,25,14,5"]},"SceneTime":{"RenderLastThreeResultsScene":"15","RenderStatisticsScene":"10"}}}
     res.json(data);
 });
 
