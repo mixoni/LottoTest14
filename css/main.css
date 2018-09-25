@@ -627,8 +627,8 @@ row-11-custom .ball-numbers-medium {
     }
     .ball-inner-circle {
         margin: 21% !important;
-        width: 65px !important;
-        height: 65px !important;
+        width: 45px !important;
+        height: 45px !important;
     }
     .ball-selected-badges .ball-inner-circle {
         margin: 21% !important;
