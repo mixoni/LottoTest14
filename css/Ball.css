@@ -1,0 +1,747 @@
+﻿.ball-logo, .ball-game {
+    width: 63px;
+    height: 63px;
+    float: left;
+    top: 27px;
+    left: 8px;
+    position: relative;
+    /*border: 1px solid red !important;*/
+    margin-left: 1%;
+    background-color: #3f4d67;
+}
+
+.ball-logo {
+    background-image: url('../Images/greece_round_icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 105px;
+}
+.statistics-result .ball-game .ball-inner-circle {
+    margin-top: 4.9px !important;
+}
+
+.ball-numbers {
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-top: 1.1%;
+    margin-left: 1.4%;
+    position: relative;
+    background-color: #3f4d67;
+}
+
+[data-badge]:after {
+    content: attr(data-badge);
+    position: absolute;
+    top: -8px;
+    right: 5px;
+    font-size: 1em;
+    background: #3f4d67;
+    color: white;
+    width: 18px;
+    height: 22px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+    /*box-shadow: 0 0 1px #333;*/
+}
+
+
+.ball-selected {
+    width: 65px;
+    height: 65px;
+    display: block;
+    /*background: darkred;*/
+    position: absolute;
+    /*border: 2px solid darkred;*/
+    margin-top: -2px;
+    margin-left: -2px;
+    background-color: #3f4d67;
+}
+.ball-selected-animation {
+    width: 65px;
+    height: 65px;
+    display: block;
+    /*background: darkred;*/
+    position: absolute;
+    /*border: 2px solid darkred;*/
+    /*margin-top: -2px;
+    margin-left: -2px;*/
+    background-color: #3f4d67;
+    -webkit-animation: pulse-dot infinite linear;
+    -moz-animation: pulse-dot infinite linear;
+    -o-animation: pulse-dot infinite linear;
+    -ms-animation: pulse-dot infinite linear;
+    animation: pulse-dot infinite linear;
+    animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+}
+.ball-selected-badges {
+    width: 72px;
+    height: 72px;
+    display: block;
+    /*background: darkred;*/
+    position: absolute;
+    /*border: 2px solid darkred;*/
+    margin-top: -2px;
+    margin-left: -2px;
+    background-color: #3f4d67;
+    -webkit-animation: pulse-dot infinite linear;
+    -moz-animation: pulse-dot infinite linear;
+    -o-animation: pulse-dot infinite linear;
+    -ms-animation: pulse-dot infinite linear;
+    animation: pulse-dot infinite linear;
+    animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+}
+.ball-selected-yellow {
+    background: -webkit-radial-gradient(65% 15%, circle, white 1px, white 0.5%, #ced355 60%, #ced355 100%);
+    background: -moz-radial-gradient(65% 15%, circle, white 1px, white 0.5%, #ced355 60%, #ced355 100%);
+    background: -o-radial-gradient(65% 15%, circle, white 1px, white 0.5%, #ced355 60%, #ced355 100%);
+    background: radial-gradient(circle at 65% 15%, white 1px, white 0.5%, #ced355 60%, #ced355 100%);
+    /*border: 1px solid yellow;*/
+}
+.ball-selected-green {
+    background: -webkit-radial-gradient(65% 15%, circle, white 1px, white 1%, #019771 60%, #019771 100%);
+    background: -moz-radial-gradient(65% 15%, circle, white 1px, white 1%, #019771 60%, #019771 100%);
+    background: -o-radial-gradient(65% 15%, circle, white 1px, white 1%, #019771 60%, #019771 100%);
+    background: radial-gradient(circle at 65% 15%, white 1px, white 1%, #019771 60%, #019771 100%);
+    /*border: 1px solid palegreen;*/
+}
+.ball-selected-lightgreen {
+    background: -webkit-radial-gradient(65% 15%, circle, white 1px, white 1%, #1adb98 60%, #1adb98 100%);
+    background: -moz-radial-gradient(65% 15%, circle, white 1px, white 1%, #1adb98 60%, #1adb98 100%);
+    background: -o-radial-gradient(65% 15%, circle, white 1px, white 1%, #1adb98 60%, #1adb98 100%);
+    background: radial-gradient(circle at 65% 15%, white 1px, white 1%, #1adb9860%, #1adb98 100%);
+    /*border: 1px solid aqua;*/
+}
+.ball-selected-red {
+    background: -webkit-radial-gradient(65% 15%, circle, white 1px, white 1%, #da545d 60%, #da545d 100%);
+    background: -moz-radial-gradient(65% 15%, circle, white 1px, white 1%, #da545d 60%, #da545d 100%);
+    background: -o-radial-gradient(65% 15%, circle, white 1px, white 1%, #da545d 60%, #da545d 100%);
+    background: radial-gradient(circle at 65% 15%, white 1px, white 1%, #da545d 60%, #da545d 100%);
+}
+.ball-selected-blue {
+    background: -webkit-radial-gradient(65% 15%, circle, white 1px, white 1%, #0db8f0 60%, #0db8f0 100%);
+    background: -moz-radial-gradient(65% 15%, circle, white 1px, white 1%, #0db8f0 60%, #0db8f0 100%);
+    background: -o-radial-gradient(65% 15%, circle, white 1px, white 1%, #0db8f0 60%, #0db8f0 100%);
+    background: radial-gradient(circle at 65% 15%, white 1px, white 1%, #0db8f0 60%, #0db8f0 100%);
+    /*border: 1px solid aqua;*/
+}
+
+.ball-selected-gold {
+    background: black;
+    background: -webkit-radial-gradient(65% 15%, circle, white 1px, white 1%, #caac7a 60%, #caac7a 100%);
+    background: -moz-radial-gradient(65% 15%, circle, white 1px, white 1%, #caac7a 60%, #caac7a 100%);
+    background: -o-radial-gradient(65% 15%, circle, white 1px, white 1%, #caac7a 60%, #caac7a 100%);
+    background: radial-gradient(circle at 65% 15%, white 1px, white 1%, #caac7a 60%, #caac7a 100%);
+    /*border: 1px solid black;*/
+}
+.ball-selected-purple {
+    background: -webkit-radial-gradient(65% 15%, circle, white 1px, white 0.5%, #b13bcd 60%, #b13bcd 100%);
+    background: -moz-radial-gradient(65% 15%, circle, white 1px, white 0.5%, #b13bcd 60%, #b13bcd 100%);
+    background: -o-radial-gradient(65% 15%, circle, white 1px, white 0.5%, #b13bcd 60%, #b13bcd 100%);
+    background: radial-gradient(circle at 65% 15%, white 1px, white 0.5%, #b13bcd 60%, #b13bcd 100%);
+}
+.ball-selected-lightpurple {
+    background: -webkit-radial-gradient(65% 10%, circle, white 1px, white 0.5%, #7747d9 60%, #7747d9 100%);
+    background: -moz-radial-gradient(65% 10%, circle, white 1px, white 0.5%, #7747d9 60%, #7747d9 100%);
+    background: -o-radial-gradient(65% 10%, circle, white 1px, white 0.5%, #7747d9 60%, #7747d9 100%);
+    background: radial-gradient(circle at 65% 10%, white 1px, white 0.5%,#7747d9 3%, #7747d960%, #7747d9 100%);
+}
+
+
+.ball-inner-circle {
+    display: block;
+    border: 2px solid white;
+    position: relative;
+    margin: 20%;
+    width: 33px;
+    height: 33px;
+}
+.ball-circle-number {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: white;
+    border: none;
+    margin: 5%;
+    font-size:1.6em;
+}
+.ball-circle-number span {
+    text-align: center;
+    vertical-align: middle;
+    display:block;
+}
+
+/**/
+.ball-numbers-medium {
+    width: 90px;
+    height: 90px;
+    float: left;
+    top: 9px;
+    left: 5px;
+    position: relative;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    background-color: #3f4d67;
+}
+.ball-numbers-medium .ball-selected {
+    width: 92px;
+    height: 92px;
+}
+.ball-numbers-medium .ball-selected .ball-inner-circle {
+    margin: 21%;
+    width: 50px;
+    height: 50px;
+}
+.ball-numbers-medium .ball-selected .ball-inner-circle .ball-circle-number {
+    margin: 2%;
+    width: 47px;
+    height: 47px;
+    font-size:2.5em;
+}
+
+.results-numbers .ball-numbers-medium .ball-selected .ball-inner-circle {
+    margin: 16%;
+    width: 45px;
+    height: 45px;
+}
+
+.results-numbers .ball-numbers-medium .ball-selected .ball-inner-circle .ball-circle-number {
+    margin: 3.5%;
+    width: 42px;
+    height: 42px;
+    font-size: 2.1em;
+    line-height:42px;
+}
+
+/*------------------*/
+.statistics-result-left .ball-numbers-medium .ball-selected .ball-inner-circle,
+.statistics-result-right .ball-numbers-medium .ball-selected .ball-inner-circle {
+    margin: 20%;
+    width: 40px;
+    height: 40px;
+}
+
+.statistics-result-left .ball-numbers-medium .ball-selected .ball-inner-circle .ball-circle-number,
+.statistics-result-right .ball-numbers-medium .ball-selected .ball-inner-circle .ball-circle-number {
+    margin: 3%;
+    width: 37px;
+    height: 37px;
+    font-size: 2em;
+    line-height: 37px;
+}
+.statistics-result-left .ball-numbers-medium .ball-selected,
+.statistics-result-right .ball-numbers-medium .ball-selected {
+    width: 72px;
+    height: 72px;
+}
+.statistics-result-left .ball-numbers-medium,
+.statistics-result-right .ball-numbers-medium {
+    width: 70px;
+    height: 70px;
+}
+
+@-webkit-keyframes spin1 {
+    0% {
+        -webkit-transform: scale(.1) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1.1) rotate(360deg);
+
+    }
+}
+
+@-moz-keyframes spin1 {
+    0% {
+        -moz-transform: scale(.1) rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: scale(1.1) rotate(360deg);
+    }
+}
+
+@-o-keyframes spin1 {
+    0% {
+        -o-transform: scale(.1) rotate(0deg);
+    }
+
+    100% {
+        -o-transform: scale(1.1) rotate(360deg);
+    }
+}
+
+@-ms-keyframes spin1 {
+    0% {
+        -ms-transform: scale(.1) rotate(0deg);
+    }
+
+    100% {
+        -ms-transform: scale(1.1) rotate(360deg);
+    }
+}
+
+@-keyframes spin1 {
+    0% {
+        transform: scale(.1) rotate(0deg);
+    }
+
+    100% {
+        transform: scale(1.1) rotate(360deg);
+    }
+}
+/* FULL HD animation */
+@media screen and (min-height: 1080px) {
+    .results-numbers .ball-numbers-medium .ball-selected .ball-inner-circle {
+        margin: 16%;
+        width: 67px;
+        height: 67px;
+    }
+
+    .results-numbers .ball-numbers-medium .ball-selected .ball-inner-circle .ball-circle-number {
+        margin: 3.5%;
+        width: 64px;
+        height: 64px;
+        font-size: 2.1em;
+        line-height: 64px;
+    }
+
+    .statistics-result-left .ball-numbers-medium .ball-selected .ball-inner-circle,
+    .statistics-result-right .ball-numbers-medium .ball-selected .ball-inner-circle {
+        margin: 20%;
+        width: 64px;
+        height: 64px;
+    }
+
+    .statistics-result-left .ball-numbers-medium .ball-selected .ball-inner-circle .ball-circle-number,
+    .statistics-result-right .ball-numbers-medium .ball-selected .ball-inner-circle .ball-circle-number {
+        margin: 3%;
+        width: 60px !important;
+        height: 60px !important;
+        font-size: 2.5em !important;
+        line-height: 60px !important;
+    }
+
+    .statistics-result-left .ball-numbers-medium .ball-selected,
+    .statistics-result-right .ball-numbers-medium .ball-selected {
+        width: 92px;
+        height: 92px;
+    }
+
+    .statistics-result-left .ball-numbers-medium,
+    .statistics-result-right .ball-numbers-medium {
+        width: 112px;
+        height: 112px;
+        margin-bottom:8px;
+    }
+    .statistics-title-right,
+    .statistics-title-left {
+        font-size: 2.65em;
+    }
+    .statistics-result .ball-circle, .statistics-result .ball-logo, .statistics-result .ball-game {
+        width: 112px !important;
+        height: 112px !important;
+        top: 25px !important;
+    }
+    .statistics-result .ball-logo {
+        background-size: 160px !important;
+    }
+    .statistics-result .ball-game .ball-circle-number {
+        font-size: 4em !important;
+    }
+    .statistics-result-right .ball-selected-animation, .statistics-result-right .ball-selected,
+    .statistics-result-left .ball-selected-animation, .statistics-result-left .ball-selected,
+    .statistics-result .ball-game .ball-selected {
+        width: 115px !important;
+        height: 115px !important;
+    }
+    .statistics-result .ball-game .ball-inner-circle {
+        margin-left: 7px !important;
+        margin-top: 8.9px !important;
+    }
+    .statistics-result .countdown-timer {
+        font-size: 6em;
+        padding: 15px;
+        margin-top: 18px;
+    }
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes ballToDown-FullHd {
+        0% {
+            margin-top: -70px;
+            margin-left: 430px;
+            line-height: 220px;
+            font-size: 0.1em;
+            width: 1px;
+            height: 1px;
+            line-height: 1px;
+            opacity: 0.1;
+        }
+
+        50% {
+            margin-top: -760px;
+            margin-left: 130px;
+            line-height: 320px;
+            width: 320px;
+            height: 320px;
+            font-size: 9em;
+            line-height: 320px;
+            opacity: 0.9;
+        }
+        80% {
+            margin-top: -760px;
+            margin-left: 130px;
+            line-height: 320px;
+            width: 320px;
+            height: 320px;
+            font-size: 9em;
+            line-height: 320px;
+            opacity: 0.9;
+        }
+
+        100% {
+            margin-top: -60px;
+            margin-left: 210px;
+            line-height: 90px;
+            width: 90px;
+            height: 90px;
+            opacity: 0.01;
+            font-size: 1.6em;
+        }
+    }
+
+    @keyframes ballToDown-FullHd {
+        0% {
+            margin-top: -70px;
+            margin-left: 430px;
+            line-height: 220px;
+            font-size: 0.1em;
+            width: 1px;
+            height: 1px;
+            line-height: 1px;
+            opacity: 0.1;
+        }
+        50% {
+            margin-top: -380px;
+            margin-left: 130px;
+            line-height: 230px;
+            width: 230px;
+            height: 230px;
+            font-size: 9em;
+            line-height: 220px;
+            opacity: 0.9;
+        }
+        80% {
+            margin-top: -380px;
+            margin-left: 130px;
+            line-height: 230px;
+            width: 230px;
+            height: 230px;
+            font-size: 9em;
+            line-height: 220px;
+            opacity: 0.9;
+        }
+
+        100% {
+            margin-top: -30px;
+            margin-left: 210px;
+            line-height: 90px;
+            width: 90px;
+            height: 90px;
+            opacity: 0.01;
+            font-size: 1.6em;
+        }
+    }
+}
+/* ULTRA HD 4K animation */
+@media screen and (min-height: 2160px) {
+
+    .statistics-result-left .ball-numbers-medium .ball-selected .ball-inner-circle,
+    .statistics-result-right .ball-numbers-medium .ball-selected .ball-inner-circle {
+        margin: 20% !important;
+        width: 132px !important;
+        height: 132px !important;
+    }
+
+        .statistics-result-left .ball-numbers-medium .ball-selected .ball-inner-circle .ball-circle-number,
+        .statistics-result-right .ball-numbers-medium .ball-selected .ball-inner-circle .ball-circle-number {
+            margin: 3%;
+            width: 124px !important;
+            height: 124px !important;
+            font-size: 6em !important;
+            line-height: 124px !important;
+        }
+
+    .statistics-result-left .ball-numbers-medium .ball-selected,
+    .statistics-result-right .ball-numbers-medium .ball-selected {
+        width: 184px;
+        height: 184px;
+    }
+
+    .statistics-result-left .ball-numbers-medium,
+    .statistics-result-right .ball-numbers-medium {
+        width: 224px;
+        height: 224px;
+        margin-bottom: 16px;
+    }
+
+    .statistics-title-right,
+    .statistics-title-left {
+        font-size: 4.95em;
+    }
+
+    .statistics-result .ball-circle, .statistics-result .ball-logo, .statistics-result .ball-game {
+        width: 224px !important;
+        height: 224px !important;
+        top:50px !important;
+    }
+
+    .statistics-result .ball-logo {
+        background-size: 332px !important;
+    }
+
+    .statistics-result .ball-game .ball-circle-number {
+        font-size: 9em !important;
+        line-height:185px;
+    }
+
+    .statistics-result-right .ball-selected-animation, .statistics-result-right .ball-selected, 
+    .statistics-result-left .ball-selected-animation, .statistics-result-left .ball-selected,
+    .statistics-result .ball-game .ball-selected  {
+        width: 230px !important;
+        height: 230px !important;
+    }
+    .statistics-result .ball-game .ball-inner-circle {
+        margin-left: 16px !important;
+        margin-top: 15.5px !important;
+    }
+    .statistics-result .ball-numbers-medium .ball-inner-circle {
+        margin: 21% !important;
+        width: 132px !important;
+        height: 132px !important;
+    }
+    .statistics-result .countdown-timer {
+        font-size: 12em;
+        padding: 30px;
+        margin-top: 36px;
+    }
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes ballToDown-UltraHD4K {
+        0% {
+            margin-top: -180px;
+            margin-left: 860px;
+            line-height: 440px;
+            font-size: 0.1em;
+            width: 1px;
+            height: 1px;
+            line-height: 1px;
+            opacity: 0.1;
+        }
+
+        50% {
+            margin-top: -760px;
+            margin-left: 250px;
+            line-height: 540px;
+            width: 540px;
+            height: 540px;
+            font-size: 25em;
+            line-height: 540px;
+            opacity: 0.9;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        80% {
+            margin-top: -760px;
+            margin-left: 250px;
+            line-height: 540px;
+            width: 540px;
+            height: 540px;
+            font-size: 25em;
+            line-height: 540px;
+            opacity: 0.9;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        100% {
+            margin-top: -60px;
+            margin-left: 410px;
+            line-height: 180px;
+            width: 180px;
+            height: 180px;
+            opacity: 0.01;
+            font-size: 3.2em;
+        }
+    }
+
+    @keyframes ballToDown-UltraHD4K {
+        0% {
+            margin-top: -180px;
+            margin-left: 860px;
+            line-height: 440px;
+            font-size: 0.1em;
+            width: 1px;
+            height: 1px;
+            line-height: 1px;
+            opacity: 0.1;
+        }
+
+        50% {
+            margin-top: -760px;
+            margin-left: 250px;
+            line-height: 540px;
+            width: 540px;
+            height: 540px;
+            font-size: 25em;
+            line-height: 540px;
+            opacity: 0.9;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        80% {
+            margin-top: -760px;
+            margin-left: 250px;
+            line-height: 540px;
+            width: 540px;
+            height: 540px;
+            font-size: 25em;
+            line-height: 540px;
+            opacity: 0.9;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        100% {
+            margin-top: -60px;
+            margin-left: 410px;
+            line-height: 180px;
+            width: 180px;
+            height: 180px;
+            opacity: 0.01;
+            font-size: 3.2em;
+        }
+    }
+}
+
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes ballToDown {
+        0% {
+            margin-top: -40px;
+            margin-left: 280px;
+            line-height: 200px;
+            font-size: 0.1em;
+            width: 1px;
+            height: 1px;
+            line-height: 1px;
+            opacity: 0.1;
+        }
+
+        50% {
+            margin-top: -270px;
+            margin-left: 80px;
+            line-height: 180px;
+            width: 180px;
+            height: 180px;
+            font-size: 7em;
+            line-height: 180px;
+            opacity: 0.9;
+        }
+        80% {
+            margin-top: -270px;
+            margin-left: 80px;
+            line-height: 180px;
+            width: 180px;
+            height: 180px;
+            font-size: 7em;
+            line-height: 180px;
+            opacity: 0.9;
+        }
+        100% {
+            margin-top: 15px;
+            margin-left: 137px;
+            line-height: 70px;
+            width: 70px;
+            height: 70px;
+            opacity: 0.01;
+            font-size: 1.6em;
+        }
+    }
+
+    @keyframes ballToDown {
+        0% {
+            margin-top: -40px;
+            margin-left: 300px;
+            line-height: 200px;
+            font-size: 0.1em;
+            width: 1px;
+            height: 1px;
+            line-height: 1px;
+            opacity: 0.1;
+        }
+
+        50% {
+            margin-top: -270px;
+            margin-left: 80px;
+            line-height: 180px;
+            width: 180px;
+            height: 180px;
+            font-size: 7em;
+            line-height: 180px;
+            opacity: 0.9;
+        }
+        80% {
+            margin-top: -270px;
+            margin-left: 80px;
+            line-height: 180px;
+            width: 180px;
+            height: 180px;
+            font-size: 7em;
+            line-height: 180px;
+            opacity: 0.9;
+        }
+
+        100% {
+            margin-top: 15px;
+            margin-left: 137px;
+            line-height: 70px;
+            width: 70px;
+            height: 70px;
+            opacity: 0.01;
+            font-size: 1.6em;
+        }
+    }
+
+
+    @keyframes pulse-ring {
+        0% {
+            transform: scale(.33);
+        }
+
+        80%, 100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes pulse-dot {
+        0% {
+            transform: scale(.8);
+        }
+
+        50% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(.8);
+        }
+    }
