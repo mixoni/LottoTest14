@@ -146,7 +146,10 @@ componentDidMount(){
                 //allImg.className= "drum-images hide";
                 //let img = document.querySelector("img[src='./Images/New/LottoR30050.png']");            
                 let img = document.querySelector("img[src='./Images/Drum/LottoJPG_003050.jpeg']");            
-                img.className = "drum-images show";
+                
+                if(img)
+                    img.className = "drum-images show";
+
                 clearInterval(startRenderDrumAnimation);
                 //centerElementToUpdate.innerHTML = "<div class='center-ball-animation-finished-text'>Kraj</div>";         
                 setTimeout(function(){                    
