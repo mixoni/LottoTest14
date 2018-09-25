@@ -488,7 +488,7 @@ var Circle = /** @class */ (function (_super) {
                 img.className = "drum-images hide";
                 centerElement.appendChild(img);
                 renderTimer++;
-                if (renderTimer > 999)
+                if (renderTimer > 992)
                     renderTimer = 115;
                 //clearInterval(startRenderDrumAnimation);                        
             }
@@ -572,7 +572,7 @@ var Circle = /** @class */ (function (_super) {
                 img.className = "drum-images show";
                 //console.log(img.src);
                 renderTimer_1++;
-                if (renderTimer_1 > 999)
+                if (renderTimer_1 > 992)
                     renderTimer_1 = 115;
                 //clearInterval(startRenderDrumAnimation);                        
             }

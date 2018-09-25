@@ -102,7 +102,7 @@ componentDidMount(){
            
             //console.log(img.src);
             renderTimer++;  
-            if(renderTimer > 999 )
+            if(renderTimer > 992 )
                 renderTimer = 115;
                 //clearInterval(startRenderDrumAnimation);                        
         };
@@ -391,7 +391,7 @@ Animation = () => {
 
 
         renderTimer++;  
-        if(renderTimer > 999 )
+        if(renderTimer > 992 )
             renderTimer = 115;
             //clearInterval(startRenderDrumAnimation);                        
     };
