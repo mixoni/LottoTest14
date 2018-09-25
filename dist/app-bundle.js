@@ -488,9 +488,8 @@ var Circle = /** @class */ (function (_super) {
                 img.className = "drum-images hide";
                 centerElement.appendChild(img);
                 renderTimer++;
-                if (renderTimer > 999)
-                    renderTimer = 115;
-                //clearInterval(startRenderDrumAnimation);                        
+                if (renderTimer > 3100)
+                    clearInterval(startRenderDrumAnimation);
             }
             ;
             var startRenderDrumAnimation = setInterval(function () {
@@ -572,9 +571,8 @@ var Circle = /** @class */ (function (_super) {
                 img.className = "drum-images show";
                 //console.log(img.src);
                 renderTimer_1++;
-                if (renderTimer_1 > 999)
-                    renderTimer_1 = 115;
-                //clearInterval(startRenderDrumAnimation);                        
+                if (renderTimer_1 > 3100)
+                    clearInterval(startRenderDrumAnimation_1);
             }
             ;
             var startRenderDrumAnimation_1 = setInterval(function () {
@@ -786,21 +784,15 @@ var LuckyNumber = /** @class */ (function (_super) {
     function LuckyNumber(props) {
         var _this = _super.call(this, props) || this;
         _this.handleColor = function ($value) {
-            var color = "red";
+            var color = "black";
             if ($value >= 1 && $value < 10)
-                color = "blue";
+                color = "yellow";
             if ($value >= 10 && $value < 20)
-                color = "purple";
+                color = "red";
             if ($value >= 20 && $value < 30)
-                color = "lightpurple";
+                color = "blue";
             if ($value >= 30 && $value < 40)
                 color = "green";
-            if ($value >= 40 && $value < 50)
-                color = "lightgreen";
-            if ($value >= 50 && $value < 60)
-                color = "gold";
-            if ($value >= 60 && $value < 70)
-                color = "yellow";
             return color;
         };
         _this.state = { component: React.createElement("div", null,

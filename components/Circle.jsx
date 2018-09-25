@@ -31,7 +31,7 @@ startAnimating = (fps) => {
     fpsInterval = 1000 / fps;
     then = Date.now();
     startTime = then;
-    console.log(startTime);
+    //console.log(startTime);
     animate();
 }
 
@@ -102,9 +102,8 @@ componentDidMount(){
            
             //console.log(img.src);
             renderTimer++;  
-            if(renderTimer > 999 )
-                renderTimer = 115;
-                //clearInterval(startRenderDrumAnimation);                        
+            if(renderTimer > 3100 )
+                clearInterval(startRenderDrumAnimation);                        
         };
 
         let startRenderDrumAnimation = setInterval(function(){
@@ -249,8 +248,8 @@ handleBallColor = ($value) => {
 }
 
 handleChange = (e) => {
-    console.log("div changed to "+  e.target.value);
-    alert('changed');
+    //console.log("div changed to "+  e.target.value);
+    //alert('changed');
 }
 
 clearLocalStorageKey = (key) {
@@ -391,9 +390,8 @@ Animation = () => {
 
 
         renderTimer++;  
-        if(renderTimer > 999 )
-            renderTimer = 115;
-            //clearInterval(startRenderDrumAnimation);                        
+        if(renderTimer > 3100 )
+            clearInterval(startRenderDrumAnimation);                        
     };
     let startRenderDrumAnimation = setInterval(function(){
         requestAnimationFrame(initailRenderDrum);            
